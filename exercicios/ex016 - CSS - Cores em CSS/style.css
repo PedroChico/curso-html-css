@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+    background-image: linear-gradient(to right, #647A66,  #6CAD70, #5EE067, #1E331F);
+}
+
+p {
+    text-align: justify; /*Justificar texto*/
+}
+
+main {
+    background-color: white; /*Cor de fundo*/
+    border-radius: 10px; /*Arredondar as bordas*/
+    box-shadow: 10px 10px 10px #647A66; /*Dar sombreado, á direita, á esquerda, quanto de expansão e a cor*/
+    width: 600px; /*Para não ocupar toda a largura da página*/
+    padding: 10px; /*Para deixar o texto centralizado na caixa*/
+    margin: auto; /*Aqui temos várias opções como auto, top, right, left, etc. No caso do "auto" que usamos aqui, ele irá centralizar*/
+    
+}
+
+h1 {
+    color: #5EE067;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+h2 {
+    color: #647A66;
+    text-shadow: 1px 1px 1px black;
+}
+

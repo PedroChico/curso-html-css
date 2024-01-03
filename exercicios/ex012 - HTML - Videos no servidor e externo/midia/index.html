@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor, e estará consumindo os seus dados, depenendo do número de acessos diários pode ficar bem caro.</p>
+
+    <video width="200" controls>
+       <source src="Meu-Video.webm" type="video/webm" >
+       <source src="Meu-Video.mkv" type="video/mkv" >
+       <source src="meu-video (1).ogv" type="video/ogv" >
+       <source src="meu-video.mp4" type="video/mp4" >
+    </video>
+
+    <!--Precisamos fazer desta forma, com vários formatos diferentes de vídeos, devido a compatibilidade de cada  navedor web diferente (Google, Safari, Mozilla, etc)-->
+    
+    <p>Caso o seu vídeo não esteja rodando, é porque o seu navegador não tem compatbilidade com reprodução de vídeos</p>
+
+     <!--OBSERVAÇÃO: TOMAR MUITO CUIDADO COM VIDEOS HOSPEDADOS NO PRÓPRIO SERVIDOR, POIS PODE GERAR ALTOS CUSTOS PARA O SEU CLIENTE, POIS ELES IRÃO CONSUMIR DADOS-->
+
+<h1>Inserindo vídeos de serviços de vídeos, serviços de hospedagem de vídeos</h1> 
+<p>Este vídeo está hospedado no site do youtube e não está consumindo dados do seu cliente e sim, do próprio youtube.</p>
+
+<!--Para isso vamos até o servidor, por exemplo o Youtube e o Vimeo, escolhemos o vídeos que queremos colocar site, vamos em compartilhar e depois em incorporar, ele já te dá o código HTML, basta colar e copiar aqui-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=Hrh-PoqB8z39dts4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!--É muito interessante que os vídeos do seu cliente estejam hospedados no youtube, pois desta forma você poderá usar este recurso e subir os vídeos para o site dele de lá, sem gerar custos adicionais com dados-->
+
+<br>
+<p>Ou também, como o vídeo abaixo, hospedado no Vimeo:</p>
+
+<iframe src="https://player.vimeo.com/video/29844795?h=f0a1764666" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/29844795">Animation Reel</a> from <a href="https://vimeo.com/user4645326">Raul Mari&ntilde;ez</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+</body>
+</html>

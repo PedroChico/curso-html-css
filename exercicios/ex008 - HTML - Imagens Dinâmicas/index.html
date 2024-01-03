@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <!--Aqui vamos adequar o tamanho das imagens ao tamanho da tela do usuário. Temos tamanhos de imagens diferentes para celular, tabelt e PC/TV-->
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes, ou simplesmente aumente ou diminua o tamanho do seu navegador</p> <!--Antes disso, nós criamos 3 imagens de tamanhos P, M e G no aplicativo GIMP, e salvamos na pasta apropriada-->
+    <!--Imagem para celular tamanho 300x300, para tablet 700x700 e para computador 1000x1000-->
+    <picture><!--Essa tag diz que vai aparecer um imagem "dinâmica", para visualização em diferentes tamanhos de tela-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!--Essa tag "source" vai condicionar o tamanho da imagem ao tamanho da tela. Com ela estamos dizendo: se o tamanho da tela for até tanto, mostre a imagem tal-->
+        <img src="imagens/foto-g.png" alt=""> 
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    
+    <audio preload="metadata" autoplay controls >
+        <source src="midia/Helium.mp3" type="audio/mp3">
+        <source src="midia/Helium.ogg" type="audio/ogg">
+        <source src="midia/Helium.wav" type="audio/wav">
+        <!--Com este comando você pode disponibilizar esses três tipos diferentes de áudio, pois tem navegadores que não executam mp3, por exemplo, mas você tem que ter os três tipos de aúdio na pasta. "O áudio do tipo wav não é aconselhável usar, pois é pesado demais"-->
+    </audio>
+
+    
+
+
+
+</body>
+</html>

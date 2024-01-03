@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;/*Aqui pode ser colocado ao invés do nome da letra, o tipo, por exemplo: sans-serife(não serifada), serif(serifada), monoespace(monoespaçada)*/
+            /*O comando sempre apresenta três tipos de letra, devido ás diferenças entre os navegadores, ele vai buscar qual das três o navegador usa.*/
+            font-size: 1em; /*1em geralmente é igual a 16px, que é o tamanho normal de letra*/
+
+            /*MEDIDAS ABSOLUTAS: cm, mm, in(polegada), px(pixel), pt(ponto) e pc(paica)
+            Fazendo uso dessas medidas podemos ter problemas, devido ás diferenças de telas*/
+
+            /*MEDIDAS RELATIVAS: em, ex, rem, vw, vh e %
+            Vamos trabalhar somente com "px" e "em"*/
+
+            font-weight: normal;/*Opções: ligther, normal, bold e bolder. Não todas as fontes que possuem essas variações*/                    
+        }
+
+        h1, h2 {
+            text-decoration: underline;
+            font-weight: bold;
+            font-style: italic; 
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maiores voluptatum veritatis quidem officia, sequi cum laboriosam qui provident laborum soluta exercitationem aut placeat commodi molestiae! Exercitationem quos pariatur impedit?</p>
+
+    <h2>Subtítulo de exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum perspiciatis aperiam asperiores quibusdam minus dignissimos! Neque rem commodi sint enim, pariatur quis! Rerum dolorem fugit aperiam sit quia, dicta porro?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, fugit. Voluptatum facere aliquam mollitia quas totam eum, repellat nulla! Nesciunt, nulla voluptates. Amet consequatur atque iure fugiat inventore nulla voluptas?</p>
+
+
+</body>
+</html>
