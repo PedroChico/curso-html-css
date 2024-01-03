@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(196, 223, 196);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+        
+}
+
+h1 {
+    color: green;
+    background-color: white;
+    
+}
+
+h1#principal { /*Este é um seletor personalizado.*/   
+               /*Tudo que é "id=" em HTML, no CSS passa a ser "#" */
+    text-align: center;
+    color: white;
+    background-color: green;
+}
+
+h2 {
+    color: rgb(76, 94, 76);
+}
+
+p {
+    text-indent: 30px;
+}
+
